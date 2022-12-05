@@ -1,2 +1,3 @@
 # Uni-CS
-A collection of all Code related things from my Uni
+
+Collection of all academic things from my university 💀
