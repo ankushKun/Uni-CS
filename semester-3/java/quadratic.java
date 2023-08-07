@@ -19,5 +19,6 @@ class quadratic {
         } else {
             System.out.println("Real Solutions don't exist");
         }
+        in.close();
     }
 }
