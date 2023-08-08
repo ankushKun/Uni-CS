@@ -1,0 +1,7 @@
+EXP1
+Design, Develop and Implement a menu driven program in C for the following array operations.
+1. Create
+2. Display
+3. Insert
+4. Delete
+5. Exit
