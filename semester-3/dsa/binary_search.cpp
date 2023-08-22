@@ -3,23 +3,36 @@
 using namespace std;
 
 int main() {
-  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  int elem = 8;
+  int size, elem;
+
+  cout << "Enter size of array: ";
+  cin >> size;
+
+  int arr[size];
+  for (int i = 0; i < size; i++) {
+    cout << "Enter element " << (i + 1) << ": ";
+    cin >> arr[i];
+  }
+
+  cout << "Enter element to find: ";
+  cin >> elem;
 
   int first = 0;
-  int last = sizeof(arr) / sizeof(arr[0]);
+  int last = size;
 
-  while (1) {
+  while (first < last) {
     int mid = (first + last) / 2;
-    if (arr[mid] > elem) {
-      last = mid;
-    } else if (arr[mid] < elem) {
-      first = mid;
-    } else if (arr[mid] == elem) {
-      cout << "Found at position " << mid << endl;
+
+    if (arr[mid] == elem) {
+      cout << "Found " << elem << " at position " << mid << endl;
       return 0;
+    } else if (arr[mid] < elem) {
+      first = mid + 1;
+    } else if (arr[mid] > elem) {
+      last = mid - 1;
     }
   }
-  cout << "Didnot find element" << endl;
+
+  cout << "Didnot find element " << elem << endl;
   return 0;
 }
