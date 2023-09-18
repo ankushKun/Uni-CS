@@ -1,7 +1,17 @@
 import java.util.Scanner;
 
+class newClass{
+    public static void work(){
+        System.out.println("works");
+    }
+}
+
 class quadratic {
     public static void main(String args[]) {
+        newClass nc = new newClass();
+        nc.work();
+        // newClass.work();
+
         Scanner in = new Scanner(System.in);
         int a, b, c;
         System.out.print("Enter value of a: ");
