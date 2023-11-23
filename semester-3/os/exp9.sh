@@ -1,9 +1,14 @@
-echo "Enter 2 numbers:"
+echo "Enter 3 numbers:"
 read a
 read b
+read c
 
-echo "add: $(($a+$b))"
-echo "sub: $(($a-$b))"
-echo "mul: $(($a*$b))"
-echo "div: $(($a/$b))"
-
+if [ $a -gt $b ] && [ $a -gt $c ]
+then
+    echo "$a is the greatest number"
+elif [ $b -gt $a ] && [ $b -gt $c ]
+then
+    echo "$b is the greatest number"
+else
+    echo "$c is the greatest number"
+fi

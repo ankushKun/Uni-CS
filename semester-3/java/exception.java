@@ -18,9 +18,9 @@ class exception{
         }
         }catch(Exception e){
             System.out.println("Array space exhausted");
-            for(int j=0;j<i;j++){
-                System.out.println(names[j]+" "+marks[j]);
-            }
+        }
+        for(int j=0;j<i;j++){
+            System.out.println(names[j]+" "+marks[j]);
         }
     }
 }
