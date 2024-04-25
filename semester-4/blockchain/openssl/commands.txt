@@ -1,0 +1,8 @@
+openssl genrsa -out rsa
+
+openssl rsa -in ./rsa -pubout -out rsa.pub
+
+openssl pkeyutl -inkey rsa -in file.txt -out encrypted.txt
+
+openssl pkeyutl -decrypt -inkey rsa -in encrypted.txt -out decrypted.txt
+
